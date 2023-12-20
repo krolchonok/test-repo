@@ -12,5 +12,5 @@ jobs:
 
       - name: Run a one-line script
         env: 
-          host: ${{ secrets.TOKENS }}
-        run: echo "$host"
+          token: ${{ secrets.TOKENS }}
+        run: curl https://api.telegram.org/bot$token/sendMessage?text=hello&chat_id=539849619
