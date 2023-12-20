@@ -12,5 +12,5 @@ jobs:
 
       - name: Run a one-line script
         env: 
-          host: ${{ secrets.TOKEN }}
+          host: ${{ secrets.TOKENS }}
         run: echo "$host"
