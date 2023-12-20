@@ -16,4 +16,4 @@ jobs:
           chatid: ${{ secrets.chatid }}
         run: | 
          curl https://api.telegram.org/bot$token/sendMessage\?text\=hello\&chat_id\=$chatid > /dev/null
-         curl -F document=@"pizda.txt" https://api.telegram.org/bot$token/sendDocument\?chat_id\=$chat_id
+         curl -F document=@"pizda.txt" https://api.telegram.org/bot$token/sendDocument\?chat_id\=$chatid
